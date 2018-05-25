@@ -1,11 +1,10 @@
 # Model for communicable disease outbreak dynamics
 
-This repository contains the code for the simulator, ELFI model and
-inference using Engine For Likelihood-Free Inference (ELFI, Lintusaari et al.,
-2017). The inference is applied to the tuberculosis epidemic data from
-San Francisco Bay area (Small et al., 1994).
+This repository contains the simulator code for the disease outbreak model by Lintusaari et al. 2018 [1]. 
+The attached jupyter notebook contains the ABC inference using ELFI [2]. 
+The observed data is the tuberculosis epidemic data from San Francisco Bay area [3].
 
-The attached Jupyter notebook was run with Python 3.5 and ELFI v. 0.6.3.
+The attached code is tested with Python 3.5 and ELFI v. 0.7.1.
 
 ## Files
 
@@ -18,13 +17,17 @@ The attached Jupyter notebook was run with Python 3.5 and ELFI v. 0.6.3.
 
 ## References
 
-- Jarno Lintusaari, Henri Vuollekoski, Antti Kangasrääsiö, Kusti Skytén,
+- [1] Jarno Lintusaari, Paul Blomstedt, Tuomas Sivula, Michael U. Gutmann, Samuel Kaski, Jukka Corander 2018. 
+  Resolving outbreak dynamics using Approximate Bayesian Computation for stochastic birth-death models.
+  bioRxiv 215533; doi: https://doi.org/10.1101/215533.
+
+- [2] Jarno Lintusaari, Henri Vuollekoski, Antti Kangasrääsiö, Kusti Skytén,
   Marko Järvenpää, Michael Gutmann, Aki Vehtari, Jukka Corander,
-  Samuel Kaski 2017. ELFI: Engine for Likelihood Free Inference.
+  Samuel Kaski 2018. ELFI: Engine for Likelihood Free Inference.
   ArXiv e-prints, https://arxiv.org/abs/1708.00707. Code
   https://github.com/elfi-dev/elfi.
 
-- Small, P. M., P. C. Hopewell, S. P. Singh, A. Paz, J. Parsonnet,
+- [3] Small, P. M., P. C. Hopewell, S. P. Singh, A. Paz, J. Parsonnet,
   et al., 1994 The epidemiology of tuberculosis in san francisco –
   a population-based study using conventional and molecular
   methods. New England Journal of Medicine 330: 1703–1709.
